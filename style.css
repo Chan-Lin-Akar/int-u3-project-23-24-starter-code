@@ -20,9 +20,12 @@ body {
 /* Style the body with a background color or image if desired */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/rN0W64K4ipau8gxv/videoblocks-rotating-spiral-galaxy-deep-space-4k-animation_b3-ibflbg_thumbnail-1080_01.png");
     text-align: center;
     padding: 20px;
+    display: table;
+    width: 100%;
+    height: 100%;
 }
 
 /* Style the title of your story */
@@ -30,22 +33,24 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: white;
 }
 
 /* Style the story opening container */
 .story-opening {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    
+    color: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
 }
 
 /* Style the story image */
 .story-opening img {
-    max-width: 100%;
-    height: auto;
+    max-width: 15%;
+    height: 15%;
     margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style the story opening message */
@@ -60,38 +65,34 @@ body {
 }
 
 /* Style the option buttons */
-button {
-    font-size: 16px;
+.option-one, .option-two, .startAgain {
+    font-size: 20px;
     padding: 10px 20px;
     margin: 10px;
-    background-color: #007bff;
+    background-color: red;
     color: #fff;
-    border: none;
-    border-radius: 5px;
+    border-width: 2px;
+    border-color: #f0f0f0;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+
+    
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: rgb(148, 31, 31);
 }
 
 /* Style the screens for option one and option two */
-.option-one-screen,
-.option-two-screen,
-.option-one-end,
-.option-two-end {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
-}
+
+
+
 
 /* Style the images in the screens */
 .option-one-screen img,
-.option-two-screen img,
 .option-one-end img,
 .option-two-end img {
     max-width: 100%;
@@ -101,9 +102,41 @@ button:hover {
 
 /* Style the text in the screens */
 .option-one-screen h1,
-.option-two-screen h1,
 .option-one-end h1,
 .option-two-end h1 {
     font-size: 20px;
     margin-bottom: 20px;
+}
+
+.option-one-screen {
+    display: none;
+}
+
+.option-two-screen {
+    display: none;
+}
+
+.option-one-end {
+    display: none;
+}
+
+.option-two-end {
+    display: none;
+}
+
+.option-two-screen {
+    color: white;
+    
+}
+
+.option-two-end {
+    color: white
+}
+
+.option-one-screen {
+    color: white;
+}
+
+.option-one-end {
+    color: white;
 }
